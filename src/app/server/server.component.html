@@ -1,0 +1,7 @@
+<p 
+[ngStyle]="{backgroundColor:getColor()}"
+[ngClass]="{online: serverStatus === 'online'}"> <!--only adds if the css class 'online'-->
+    {{ 'Server' }} with ID {{serverID}} is {{getServerStatus()}}
+</p> <!--use of property binding on directive-->
+<!--ngClass is used to dynamically add/remove css classes-->
+
